@@ -65,7 +65,55 @@
       <label>여러줄을 입력합니다.</label>
       <br>
       <textarea></textarea>
+      <textarea rows="5" cols="40"></textarea>
     </div>
+    <hr>
+    <h3>select, option 태그(드랍다운메뉴)</h3>
+    <select>
+      <option>메뉴1</option>
+      <option>메뉴2</option>
+      <option selected>메뉴3(초기값: selected속성)</option>
+      <option>메뉴4</option>
+      <option>메뉴5</option>
+    </select>
+    <hr>
+    <h3>버튼</h3>
+    <p>input 태그를 이용한 버튼</p>
+    <input type="submit" value="submit버튼">
+    <input type="reset" value="reset버튼">
+    <input type="button" value="그냥버튼">
+    <p>button 태그를 이용한 버튼</p>
+    <button type="submit">submit버튼</button>
+    <button type="reset">reset버튼</button>
+    <button type="button">그냥버튼</button>
+    <ol>
+      <li>submit : form태그에서 submit이벤트(서버로전송)를 발생시킨다.  </li>
+      <li>reset : form태그 내용을 초기화 합니다.</li>
+      <li>button : 그냥 모양만 버튼</li>
+    </ol>
   </div>
+  <hr>
+  <p>폼태그 사용예제</p>
+  <form action="#" method="get">
+    <fieldset>
+      <legend>개인정보</legend>
+      <label for="name">이름: </label>
+      <input id="name">
+      <label for="age">나이: </label>
+      <input id="age">
+    </fieldset>
+    <fieldset>
+      <legend>취미</legend>
+      <input type="checkbox" id="h1">
+      <label for="h1">운동</label>
+      <input type="checkbox" id="h1">
+      <label for="h1">등산</label>
+      <input type="checkbox" id="h1">
+      <label for="h1">독서</label>
+    </fieldset>
+    <input type="submit" value="등록">
+    <button type="reset">다시쓰기</button>
+    <input type="button" value="그냥버튼">
+  </form>
 </body>
 </html>
