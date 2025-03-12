@@ -1,0 +1,14 @@
+1. 새로운폴더를 만들고 git을 초기화 합니다.
+  web-study 폴더를 만들고,
+  터미널에서
+  git init 실행 했습니다.
+2. github 사이트에서 repository 개설(원격저장소)
+  web-study 라는 이름으로 만들고
+  vscode 커맨드창에서 아래 내용실행
+  >git remote add origin https://github.com/hjlee-kr-2025/web-study.git
+  >git branch -M main
+3. commit과 push는 vscode의 gui를 이용하여 진행합니다.
+  - 소스제어탭 클릭
+  - 변경사항에서 + 클릭 ==> 스테이지에 올라감
+  - 메시지(commit)작성 후 커밋&Push버튼클릭
+  ===> 지역저장소 및 원격저장소에 변경된 사항저장
