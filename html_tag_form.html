@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼(form)태그</title>
+</head>
+<body>
+  <div>
+    <ol>
+      <li>폼태그는 사용자 입력을 위한 태그입니다.</li>
+      <li>사용자의 입력을 서버로 전송하는 역할을 담당합니다.</li>
+      <li>input 태그 - type속성으로 다양한 입력을 지정할 수 있습니다.</li>
+      <li>textarea 태그 - 여러줄의 텍스트입력</li>
+      <li>select, option 태그 - 드랍다운메뉴를 사용한 입력</li>
+      <li>button 태그 - button</li>
+    </ol>
+  </div>
+  <hr>
+  <div>
+    <h3>input 태그</h3>
+    <label for="id">type="text": </label>
+    <input id="id" placeholder="입력내용설명">
+    <!-- label은 입력내용의 주제(목적) for속성값과 input의 id값으로 매칭을 이룹니다. -->
+    <!-- input 에 type속성을 지정하지 않으면 type="text" 입니다.-->
+    <br>
+    <label for="pw">type="password":</label>
+    <input type="password" id="pw" placeholder="블릿으로 표시">
+    <!-- password 속성은 키보드를 입력하면 문자로 나오는 것이 아니고 블릿으로 표시됩니다. -->
+    <br>
+    <label for="maxlengthValue">maxlength, value 속성 : </label>
+    <input id="maxlengthValue" type="text" placeholder="최대크기 및 기본값입력" value="기본값,최대길이15" maxlength="15">
+    <br>
+    <label for="email">type="email": </label>
+    <input type="email" id="email" placeholder="이메일형식으로 작성해야 합니다.">
+    <fieldset>
+      <legend>좋아하는 과목: type="checkbox"</legend>
+      <input type="checkbox" id="html">
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css">
+      <label for="css">CSS</label>
+      <input type="checkbox" id="javascript">
+      <label for="javascript">JAVASCRIPT</label>
+      <!-- checkbox는 선택/해제가 가능하고 다중선택이 필요한 항목에 사용합니다. -->
+    </fieldset>
+    <fieldset>
+      <legend>학년:type="radio"</legend>
+      <input type="radio" id="h1" name="high" checked>
+      <label for="h1">1학년</label>
+      <input type="radio" id="h2" name="high">
+      <label for="h2">2학년</label>
+      <input type="radio" id="h3" name="high">
+      <label for="h3">3학년</label>
+      <!-- radio 는 name이 같은 것중 하나만 선택이 됩니다. 여러개중 반드시 하나가 선택되는 항목에서 사용할 수 있습니다.-->
+      <!-- 처음에 기본으로 선택되는 항목에는 checked 속성을 부여합니다. -->
+    </fieldset>
+    <fieldset>
+      <legend>날짜와 시간</legend>
+      <input type="date">
+      <input type="time">
+    </fieldset>
+    <hr>
+    <h3>textarea 태그</h3>
+    <div>
+      <label>여러줄을 입력합니다.</label>
+      <br>
+      <textarea></textarea>
+    </div>
+  </div>
+</body>
+</html>
