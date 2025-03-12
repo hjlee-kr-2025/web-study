@@ -27,5 +27,135 @@
   <div class="container box">박스1</div>
   <div class="container-fluid box">박스2</div>
   <!-- 화면전체의 위치를 지정할때 제일 바깥쪽에 있는 div에 container 값을 부여합니다. -->
+  <div class="container">
+    <h3>Grid</h3>
+    <div class="row"><!--한줄을 의미합니다.-->
+      <div class="col-md-4 box">box1</div>
+      <div class="col-md-4 box">box2</div>
+      <div class="col-md-4 box">box3</div>
+      <!-- 반응형웹으로 디자인되어있는데
+       col-옵션-숫자 에서 옵션은 sm, md, lg, xl 4가지를 사용할 수 있고, 옵션을 사용하지 않으면 1줄로 고정됩니다.
+        -->
+    </div>
+    <div class="row">
+      <!-- col-옵션-숫자
+      col : 칼럼,
+      옵션 : 반응형웹 사용 시점
+      숫자 : 전체를 더하면 12개(12등분한것중 비중) 
+      예) 숫자가 4이면 내용표현영역중 1/3 의 공간을 차지합니다.
+      -->
+      <div class="col-md-1 box">box1</div>
+      <div class="col-md-2 box">box2</div>
+      <div class="col-md-3 box">box3</div>
+      <div class="col-md-4 box">box4</div>
+      <div class="col-md-2 box">box2</div>
+    </div>
+    <div class="container">
+      <h3>테이블</h3>
+      <p>.table</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+            <td>내용3</td>
+          </tr>
+          <tr>
+            <td>내용4</td>
+            <td>내용5</td>
+            <td>내용6</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>.table + .table-striped</p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+            <td>내용3</td>
+          </tr>
+          <tr>
+            <td>내용4</td>
+            <td>내용5</td>
+            <td>내용6</td>
+          </tr>
+          <tr>
+            <td>내용7</td>
+            <td>내용8</td>
+            <td>내용9</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>.table + table-bordered</p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+            <td>내용3</td>
+          </tr>
+          <tr>
+            <td>내용4</td>
+            <td>내용5</td>
+            <td>내용6</td>
+          </tr>
+          <tr>
+            <td>내용7</td>
+            <td>내용8</td>
+            <td>내용9</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>.table .table-hover</p>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+            <td>내용3</td>
+          </tr>
+          <tr>
+            <td>내용4</td>
+            <td>내용5</td>
+            <td>내용6</td>
+          </tr>
+          <tr>
+            <td>내용7</td>
+            <td>내용8</td>
+            <td>내용9</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </body>
 </html>
