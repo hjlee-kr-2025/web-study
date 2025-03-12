@@ -1,0 +1,129 @@
+<!-- html에서 주석은 이렇게 사용합니다. -->
+<!-- vscode에서 확장자가 .html 로 되어있으면
+  !+[Enter] 를 실행하면 기본 html 구성을 자동으로 만들어 줍니다.
+-->
+<!DOCTYPE html><!-- 이 문서가 html5로 만들어 졌다는 것을 웹브라우저가 알도록 합니다. -->
+<html lang="en"><!-- html의 문서시작과 끝을 알려줍니다.
+  lang속성은 이 문서의 주요언어를 알려줍니다. 검색엔진에서 이부분을 참고합니다. lang에 다른언어 지정되었다고 하더라도 사용하는데 문제는 없습니다. -->
+<!-- html태그안에 head태그와 body태그로 구성되어있습니다. -->
+<head><!-- 설정이나 웹브라우저가 알아야할 내용을 기록합니다. + 탭제목, head에 적힌 내용은 화면에 보여지지는 않습니다. -->
+  <meta charset="UTF-8"><!-- 웹브라우저에 한글을 보여주려면 charset="UTF-8"을 설정합니다. 최신의 브라우저는 이부분을 생략해도 기본설정이 되어있습니다.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 반응형웹에서 사용하는 코드입니다. -->
+  <title>Document</title><!-- 탭에 보여지는 문자열 -->
+  <!--
+  화면에 보여지는 부분을 text라고 표현하는데 이부분은 태그와 태그사이에 적여지는 내용을 의미합니다.
+  -->
+  <style>
+    table {
+      border: 1px solid blue;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+    th, td {
+      border: 1px solid blue;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body><!-- 화면에 (웹브라우저 본문) 보여지지는 부분 -->
+  <div> <!-- 블럭레벨요소(한줄을 다 차지합니다.)-->
+    <!-- div: 화면을 배치할때 기본단위로 많이 사용합니다. 
+    div와 같은 역할을 하는 태그 중 구조를 알려주는 태그(시맨틱태그)
+    - header(웹페이지상단), footer(웹페이지하단), nav(다른페이지로 이동하는 주소모음 또는 메뉴항목), main, article, section (본문), aside(사이드바) 
+    -->
+  </div>
+  <div>
+    <!-- 문단제목에 사용하는 태그 -->
+    <!-- hx 태그는 웹브라우저 디폴트 스타일로 굵은글씨+ font-size가 정해져 있습니다. -->
+    <!-- CSS를 사용하여 스타일바꾸는것도 가능합니다. -->
+    <h1>문단제목 가장 큰 글씨: h1</h1>
+    <h2>문단제목: h2</h2>
+    <h3>문단제목: h3</h3>
+    <h4>문단제목: h4</h4>
+    <h5>문단제목: h5</h5>
+    <h6>문단제목: h6</h6>
+  </div>
+  <div><!-- div, p, hx태그 비교-->
+    <div>HTML문서확인 : div</div>
+    <p>HTML문서확인 : p</p>
+    <div>HTML문서확인 : div</div>
+    <h4>HTML문서확인 : h4</h4>
+    <div>HTML문서확인 : div</div>
+    <div>HTML문서확인 : div</div>
+  </div>
+  <div><!-- br, hr : 종료태가 없습니다. -->
+    <hr>
+    문자열을 작성중 한줄을 내리고 싶으면 br태그를<br> 사용합니다.
+    <br>hr태그는 수평선 하나를 만들어 줍니다<hr>
+  </div>
+  <div>
+    <p>다양한 텍스트 관련 태그</p>
+    <p><b>굵은글씨</b>: strong, b 태그</p>
+    <p><i>이텔릭체</i>: i, em</p>
+    <p><u>밑줄이있는 글씨</u>: u, ins</p>
+    <p><s>가운데선 글씨(취소글씨)</s>: s, del</p>
+  </div>
+  <hr>
+  <div>
+    <p>목록 만들기</p>
+    <ol type="A" start="3">
+      <li>순서가 있는 목록 ol 태그</li>
+      <li>리스트 내용은 li 태그 안에 기록합니다.</li>
+      <li>순서를 만드는 type 5가지 가 있습니다.
+      </li>
+      <li>ol태그 내의 type속성으로 지정을 합니다.</li>
+      <li>값: 1, A, a, I, i (5가지 중 하나를 선택)</li>
+      <li>시작번호는 start속성으로 숫자를 적습니다.</li>
+    </ol>
+    <ul>
+      <li>순서가 없는 목록은 ul 태그를 사용합니다.</li>
+      <li>숫자나 문자대신에 블릿이 앞에 붙게 됩니다.</li>
+      <li>속성은 없고, 사용은 ol 태그와 같이 ul 태그안에 li 태그를 사용해서 목록을 구성합니다.</li>
+    </ul>
+  </div>
+  <hr>
+  <div>
+    <p>표 만들기 3x3</p>
+    <table><!-- 표는 table태그 안에 기록합니다. -->
+      <caption>테이블 제목</caption>
+      <tr><!-- 한줄(행)을 의미합니다.-->
+        <th>제목1</th> <!--th 태그는 열의 제목에 많이 사용합니다. -->
+        <th>제목2</th>
+        <th>제목3</th>
+      </tr>
+      <tr>
+        <td>내용1행1열</td>
+        <td>내용1행2열</td>
+        <td>내용1행3열</td>
+      </tr>
+      <tr>
+        <td>내용2행1열</td>
+        <td>내용2행2열</td>
+        <td>내용2행3열</td>
+      </tr>
+      <!-- td 태그 본문내용을 나타내는 열에 주로 사용됩니다.-->
+    </table>
+    <!-- table 태그를 사용하면 선이 자동으로 만들어 지지는 않고 형태만 테이블 형태를 잡습니다. 선을 그리는 것은 CSS를 이용합니다. -->
+    <table>
+      <caption>테이블 (rowspan, colspan)</caption>
+      <tr>
+        <th>제목1</th>
+        <th colspan="2">제목2,3</th>
+      </tr>
+      <tr>
+        <td rowspan="2">내용1,2행1열</td>
+        <td>내용1행2열</td>
+        <td>내용1행3열</td>
+      </tr>
+      <tr>
+        <td>내용2행2열</td>
+        <td>내용2행3열</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <p>이미지를 화면에 넣습니다.</p>
+    <img src="">
+  </div>
+</body>
+</html>
