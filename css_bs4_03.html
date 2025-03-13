@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap4</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h3>Toggleable Tabs</h3>
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#menu1">Menu1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">Menu2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu3">Menu3</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div id="menu1" class="tab-pane active">
+        <h3>Menu1</h3>
+        <p>메뉴1번 항목입니다.</p>
+      </div>
+      <div id="menu2" class="tab-pane">
+        <h3>Menu2----</h3>
+        <p>메뉴2번 항목입니다.</p>
+      </div>
+      <div id="menu3" class="tab-pane">
+        <h3>Menu3</h3>
+        <p>메뉴3번 항목입니다.</p>
+      </div>
+    </div>
+    <hr>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- navbar-expand-sm : 반응형웹에 사용하는 클래스명 -->
+      <!-- bg-dark : 배경색, navbar-dark : 글자색 -->
+      <a class="navbar-brand" href="#">Logo</a> <!-- Logo, Home으로 가는 링크 -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">게시판1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">게시판2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">게시판3</a>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;">
+      <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navb">
+        <ul class="navbar-nav mr-auto">
+          <!-- mr-auto 클래스 옵션은 설정된 블럭과 설정안된 다른블럭을 좌우로 분리해서 표현해 줍니다. -->
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+        </form>
+      </div>
+    </nav>
+    <hr>
+    <form>
+      <!-- form-group : 여백을 줍니다. (다른입력창과) -->
+      <!-- form-contorl : 입력창의 style을 만들어 줍니다. -->
+      <button type="submit" class="btn btn-primary">등록</button>
+      <div class="form-group">
+        <label for="email">Email address: </label>
+        <input type="email" id="email" class="form-control" placeholder="이메일을 적어주세요.">
+      </div>
+      <div class="form-group">
+        <label for="pw">Password: </label>
+        <input type="password" id="pw" class="form-control" placeholder="비밀번호를 입력하세요.">
+      </div>
+      <div class="form-group">
+        <label for="name">Name: </label>
+        <input type="text" id="name" class="form-control" placeholder="이름을 입력하세요.">
+      </div>
+      <div class="form-group">
+        <label for="content">내용: </label>
+        <textarea id="content" class="form-control" rows="5"></textarea>
+        <!-- bs4 로 textarea 디자인할때 rows만 신경쓰면 됩니다. 
+        form-control을 class값으로 주면 화면 전체 폭을 차지합니다. 
+        -->
+      </div>
+      <!-- checkbox 하나가 한줄을 차지합니다.-->
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">Option 1
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="option2">
+        <label for="option2" class="form-check-label">Option 2</label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">Option 3
+        </label>
+      </div>
+      <!-- checkbox 여러개를 한줄에 표현하고 싶을때 -->
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">Option 1
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <input type="checkbox" class="form-check-input" id="option2">
+        <label for="option2" class="form-check-label">Option 2</label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">Option 3
+        </label>
+      </div>
+      <!-- radio 버튼을 한줄에 여러개를 표현해 봅시다. -->
+      <fieldset>
+        <legend>학년</legend>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="opt">1학년
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="opt">2학년
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="opt">3학년
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="opt">4학년
+          </label>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <label for="sel">드롭다운메뉴: </label>
+        <select class="form-control" id="sel">
+          <option>메뉴1</option>
+          <option>메뉴2</option>
+          <option>메뉴3</option>
+          <option>메뉴4</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <!-- mb3: margin-bottom 값을 설정해주는 bs4 클래스선택자입니다.
+        0~5, 0==> margin-bottom: 0;
+        1 ==> 0.25rem(4px), 2 ==> 0.5rem(8px), 3 ==> 1rem(16px), 
+        4 ==> 1.5rem(24px), 5 ==> 3rem(48px)
+        -->
+        <div class="input-group-prepend">
+          <span class="input-group-text" style="background: pink;">주소</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text bg-warning">학교</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+    </form>
+  </div><!-- end of class="container"-->
+</body>
+</html>
