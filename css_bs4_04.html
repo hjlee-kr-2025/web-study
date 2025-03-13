@@ -16,7 +16,7 @@
       // $(documnet).ready(function() {}); 는
       // $(function() {}); 과 똑같습니다.
       $('[data-toggle="tooltip"]').tooltip();
-
+      $('[data-toggle="popover"]').popover();
     });
   </script>
 </head>
@@ -49,6 +49,11 @@
     <h3>Tooltip</h3>
     <a href="#" data-toggle="tooltip" title="설명이나타납니다." class="btn btn-primary">일반버튼</a>
     <a href="#" data-toggle="tooltip" title="두번째 버튼입니다." class="btn btn-primary">두번째버튼</a>
+    <hr>
+    <h3>Popover</h3>
+    <a href="#" data-toggle="popover" title="popoverHeader" data-content="설명">popover</a>
   </div>
+
+  
 </body>
 </html>
